@@ -1,8 +1,17 @@
-﻿internal class Program
+namespace WinFormsApp1
 {
-    private static void Main(string[] args)
+    internal static class Program
     {
-        Console.WriteLine("Hello, Git!");
-        Console.WriteLine("let's do it");
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Form1());
+        }
     }
 }
